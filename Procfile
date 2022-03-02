@@ -1,0 +1,1 @@
+web: gunicorn gymrat.wsgi --log-file -
