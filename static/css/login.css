@@ -1,0 +1,46 @@
+* {
+    font-family: "Varela Round";
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    padding-top: 2px;
+    
+}
+
+.box{
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px 5px rgb(108, 213, 255);
+    margin: 6em 20em 0em 20em;
+    padding: 2em 0em 2em 0em;
+    
+}
+
+button{
+    width: 50%;
+}
+
+.alert{
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media (max-width: 1200px){
+    .box{
+        width: 60%;
+        margin: 0 auto;
+        padding: 0;
+        margin: 8em 0em 0em 10em;
+    }
+}
+
+@media (max-width: 800px){
+    .box{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        margin: 8em 0em 0em 1em;
+    }
+}

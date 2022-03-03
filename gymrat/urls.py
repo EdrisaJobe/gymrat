@@ -21,9 +21,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     # home view
-
-    # register/login views
     path('', include('app.urls')),
-    path('register', include('app.urls'))
+    
+    # register/login views
+    path('login', include('app.urls')),
+    path('register', include('app.urls')),
     
 ]
