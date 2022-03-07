@@ -26,6 +26,11 @@ p {
   line-height: 20px;
 }
 
+.alert{
+  margin: 0 auto;
+  padding: 0;
+}
+
 @media (max-width: 800px){
 
     .box{

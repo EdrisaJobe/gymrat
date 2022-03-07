@@ -23,6 +23,9 @@ urlpatterns = [
     # home view
     path('', include('app.urls')),
     
+    # nav tab views
+    path('calories', include('app.urls')),
+    
     # register/login views
     path('login', include('app.urls')),
     path('register', include('app.urls')),

@@ -5,7 +5,12 @@ from . import views
 app_name = 'main'
 
 urlpatterns = [
+    
+    # home
     path('',views.index, name='home'),
+    
+    # nav tabs
+    path('calories',views.calories,name='calories'),
     
     # register/login
     path('login', views.login_form,name='login'),
