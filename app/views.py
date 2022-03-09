@@ -6,10 +6,16 @@ from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm
 import requests
 from .calories import BMR, TEF, Exercise_Energy_Expenditure, Non_Exercise_Activity_Thermogenesis, Total_Daily_Energy_Expenditure, recommended_calories
+from .models import LogWorkout, Inputs
 
 ### HOMEPAGE ###
 def index(request):
 
+    if request.method == "POST":
+        
+        weight= int(request.POST['weight'])
+        reps = int(request.POST['reps'])
+    
     return render(request, 'index.html')
 
 ### Calories ###

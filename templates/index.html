@@ -21,6 +21,9 @@
        href="path/to/font-awesome/css/font-awesome.min.css"
      />
      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
+
+     <!-- navbar script -->
+     <script src="{% static 'scripts/navbar.js' %}" defer></script>
  </head>
   
   <body>
@@ -48,8 +51,25 @@
         </ul>
     </nav>
 
-    <div class='container'><h1> Track your daily workout routine.</h1></div>
-    
+    <!-- Log workout info -->
+    <div class="container">
+      <h1 class='box'> Log your workouts below</h1>
+      
+      <div class="bench">
+        <h2>Bench</h2>
+        <hr>
+      </div>
 
+      <div class="deadlift">
+        <h2>Deadlift</h2>
+        <hr>
+      </div>
+      
+      <div class="squat">
+        <h2>Squats</h2>
+        <hr>
+      </div>
+
+    </div>
   </body>
 </html>

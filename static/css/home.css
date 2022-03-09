@@ -21,3 +21,28 @@ ul{
 li{
     padding: 0em 2em 0em 2em;
 }
+
+h1{
+    color: white;
+}
+
+.box{
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px 3px;
+    border-radius: 5px;
+    margin-top: 1em;
+    background-color: rgb(31, 184, 255);
+    text-align: center;
+    padding: 1em 0em 1em 0em;
+}
+
+.bench, .deadlift, .squat{
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 1px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
