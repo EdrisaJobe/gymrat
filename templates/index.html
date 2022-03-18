@@ -53,23 +53,64 @@
 
     <!-- Log workout info -->
     <div class="container">
+
+      <form method="POST">
+        {% csrf_token %}
+
       <h1 class='box'> Log your workouts below</h1>
       
-      <div class="bench">
-        <h2>Bench</h2>
-        <hr>
-      </div>
+      <div class="workout">
 
-      <div class="deadlift">
-        <h2>Deadlift</h2>
-        <hr>
-      </div>
-      
-      <div class="squat">
-        <h2>Squats</h2>
-        <hr>
-      </div>
+        <select class="btn btn-secondary dropdown-toggle" value="day" required>
+          <option>Sunday</option>
+          <option>Monday</option>
+          <option>Tuesday</option>
+          <option>Wednesday</option>
+          <option>Thursday</option>
+          <option>Friday</option>
+          <option>Saturday</option>
+        </select>
+        
+         <input class="form-control" name="workout_type" placeholder="Type..." required />
+         <input class="form-control" name="weights" placeholder="# Weight..." required/>
+         <input class="form-control" name="reps" placeholder="# of reps..." required/>
 
+         
+
+        <input class="form-control" placeholder="Hour" style="width: 10%;" required/>
+        :
+        <input class="form-control" placeholder="Minute" style="width: 10%;" required/>
+
+          <input
+            type="submit"
+            value="Update"
+            style="width: 9%"
+            class="btn btn-primary"
+          />
+      </form>
+        <hr> 
+        
+        <!-- Table of logged exercises -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Type</th>
+              <th scope="col">Weight (lbs)</th>
+              <th scope="col">Repetitions #</th>
+              <th scope="col">Time (H:M)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" value="day"></th>
+              <td>{{ workout_type }}</td>
+              <td>{{ weights }}</td>
+              <td>{{ reps }}</td>
+              <td>{{ time_hr }}:{{ time_min }}</td>
+            </tr>
+          </tbody>
+        </table>
     </div>
   </body>
 </html>

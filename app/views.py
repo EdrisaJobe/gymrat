@@ -1,22 +1,37 @@
+import requests
+
+### Login/Register form imports
 from django.shortcuts import render, redirect
 from .forms import Register
-from django.contrib.auth import login as auth_login
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login as auth_login
 from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm
-import requests
+
+### Calories imports
 from .calories import BMR, TEF, Exercise_Energy_Expenditure, Non_Exercise_Activity_Thermogenesis, Total_Daily_Energy_Expenditure, recommended_calories
-from .models import LogWorkout, Inputs
+
+### Homepage imports
+from .models import LogWorkout
 
 ### HOMEPAGE ###
 def index(request):
-
+    
     if request.method == "POST":
         
-        weight= int(request.POST['weight'])
+        # logs user prompt based on the following
+        workout_type = request.POST['workout_type']
+        weights = int(request.POST['weights'])
         reps = int(request.POST['reps'])
+        time_hr = request.POST.get('time_hr')
+        time_min = request.POST.get('time_min')
     
-    return render(request, 'index.html')
+        return render(request, 'index.html', {"workout_type":workout_type,
+                                              "weights":weights,
+                                              "reps":reps,
+                                              "time_hr":time_hr,
+                                              "time_min":time_min})
+    else:
+        return render(request,"index.html")
 
 ### Calories ###
 def calories(request):

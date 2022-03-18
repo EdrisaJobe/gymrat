@@ -27,7 +27,7 @@ urlpatterns = [
     path('calories', include('app.urls')),
     
     # register/login views
-    path('login', include('app.urls')),
+    path('home', include('app.urls')),
     path('register', include('app.urls')),
     
 ]
