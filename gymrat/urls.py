@@ -28,6 +28,7 @@ urlpatterns = [
     
     # register/login views
     path('home', include('app.urls')),
+    path('logworkout', include('app.urls')),
     path('register', include('app.urls')),
     
 ]

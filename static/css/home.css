@@ -47,7 +47,7 @@ h1{
 }
 
 .workout > input{
-    width: 13%;
+    width: 25%;
     height: 20%;
     margin-left: 20px;
     display: inline-block;
@@ -55,4 +55,14 @@ h1{
 
 .workout > select{
     margin-left: 20px;
+}
+
+.btn{
+    float:right;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+a{
+    width: 10%;
 }

@@ -12,26 +12,45 @@ from .calories import BMR, TEF, Exercise_Energy_Expenditure, Non_Exercise_Activi
 
 ### Homepage imports
 from .models import LogWorkout
+from django.views.generic.list import ListView
+from django.views.generic.edit import CreateView, UpdateView
+from django.urls import reverse_lazy
 
 ### HOMEPAGE ###
-def index(request):
+class Workout(ListView):
     
-    if request.method == "POST":
+    model = LogWorkout
+    context_object_name = 'log'
+    template_name = 'app/dashboard.html'
+    
+class LogWorkout(CreateView):
+    
+    model = LogWorkout
+    fields = ['workout_type','weights','reps']
+    success_url = reverse_lazy('main:home')
+    template_name = 'app/logworkout.html'
+
+class UpdateWorkout(UpdateView):
+    
+    model = LogWorkout
+    fields = ['workout_type','weights','reps']
+    success_url = reverse_lazy('main:home')
+    
+    # def index(request):
         
-        # logs user prompt based on the following
-        workout_type = request.POST['workout_type']
-        weights = int(request.POST['weights'])
-        reps = int(request.POST['reps'])
-        time_hr = request.POST.get('time_hr')
-        time_min = request.POST.get('time_min')
-    
-        return render(request, 'index.html', {"workout_type":workout_type,
-                                              "weights":weights,
-                                              "reps":reps,
-                                              "time_hr":time_hr,
-                                              "time_min":time_min})
-    else:
-        return render(request,"index.html")
+    #     if request.method == "POST":
+            
+    #         # logs user prompt based on the following
+    #         workout = request.POST['workout_type']
+    #         weight = int(request.POST['weights'])
+    #         reps = int(request.POST['reps'])
+        
+    #         return render(request, 'index.html', {
+    #                                             "workout": workout,
+    #                                             "weight":weight,
+    #                                             "reps":reps})
+    #     else:
+    #         return render(request, 'index.html')
 
 ### Calories ###
 def calories(request):
