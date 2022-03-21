@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from .views import Workout, LogWorkout
+from .views import Workout, AddWorkout, UpdateWorkout, DeleteWorkout
 
 # setting name of app
 app_name = 'main'
@@ -12,10 +12,12 @@ urlpatterns = [
     
     # nav tabs
     path('calories',views.calories,name='calories'),
+    path('facts', views.facts,name='facts'),
     
     # dashboard <add,update,delete>
-    path('logworkout', LogWorkout.as_view(), name='logworkout'),
-    path('updateworkout', Updat)
+    path('log-workout', AddWorkout.as_view(), name='log'),
+    path('update-workout/<int:pk>', UpdateWorkout.as_view(), name='update'),
+    path('delete-workout/<int:pk>', DeleteWorkout.as_view(), name='delete-workout'),
     
     
     # home/register

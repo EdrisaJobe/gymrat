@@ -25,10 +25,15 @@ urlpatterns = [
     
     # nav tab views
     path('calories', include('app.urls')),
+    path('facts', include('app.urls')),
+    
+    # paths for dashboard buttons
+    path('log-workout', include('app.urls')),
+    path('update-workout', include('app.urls')),
+    path('delete-workout', include('app.urls')),
     
     # register/login views
     path('home', include('app.urls')),
-    path('logworkout', include('app.urls')),
     path('register', include('app.urls')),
     
 ]

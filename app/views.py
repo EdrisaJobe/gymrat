@@ -10,31 +10,39 @@ from django.contrib.auth.forms import AuthenticationForm
 ### Calories imports
 from .calories import BMR, TEF, Exercise_Energy_Expenditure, Non_Exercise_Activity_Thermogenesis, Total_Daily_Energy_Expenditure, recommended_calories
 
-### Homepage imports
+### Dashboard imports
 from .models import LogWorkout
 from django.views.generic.list import ListView
-from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 
-### HOMEPAGE ###
+### DASHBOARD ###
 class Workout(ListView):
     
     model = LogWorkout
     context_object_name = 'log'
     template_name = 'app/dashboard.html'
     
-class LogWorkout(CreateView):
+class AddWorkout(CreateView):
     
     model = LogWorkout
-    fields = ['workout_type','weights','reps']
+    fields = ['current_date','workout_type','weights','reps']
     success_url = reverse_lazy('main:home')
     template_name = 'app/logworkout.html'
 
 class UpdateWorkout(UpdateView):
     
     model = LogWorkout
-    fields = ['workout_type','weights','reps']
+    fields = ['current_date','workout_type','weights','reps']
     success_url = reverse_lazy('main:home')
+    template_name = 'app/logworkout.html'
+
+class DeleteWorkout(DeleteView):
+    
+    model = LogWorkout
+    context_object_name = 'log'
+    success_url = reverse_lazy('main:home')
+    template_name = 'app/delete.html'
     
     # def index(request):
         
@@ -51,6 +59,11 @@ class UpdateWorkout(UpdateView):
     #                                             "reps":reps})
     #     else:
     #         return render(request, 'index.html')
+
+### Facts page ###
+def facts(request):
+    
+    return render(request, 'facts.html')
 
 ### Calories ###
 def calories(request):
