@@ -84,11 +84,9 @@ nav{
   margin-bottom: 1em;
 }
 
-a {
-  width: 10%;
+.grow{
+  white-space: nowrap;
 }
-
-
 
 @media (max-width: 800px) {
   .workout > a {
@@ -98,8 +96,12 @@ a {
   nav{
     margin: 0;
   }
+  
   .UD{
     display: none;
+  }
+  .box{
+    width: 100%;
   }
   ul {
     box-shadow: none;

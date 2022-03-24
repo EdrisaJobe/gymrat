@@ -66,68 +66,67 @@
       </div>
     </nav>
 
-    <!-- Log workout info -->
-    <div class="container">
+        <!-- Log workout info -->
+        <div class="container">
 
-      <h1 class='box'> Log your workouts below</h1>
-      
-      <div class="workout">
-        <a
-        class="btn btn-success"
-        href="{% url 'main:log' %}"
-        >+ Add
-        </a>
-        
-        <!-- Table of logged exercises -->
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Date</th>
-              <th scope="col">Workout</th>
-              <th scope="col">Weight</th>
-              <th scope="col">Repetitions</th>
-            </tr>
-          </thead>
-          <tbody>
-
-            {% for wk in log %}
-            <tr>
-              <!-- Current date view -->
-              <th scope="row">
-              {{ wk.current_date }}
-              </th>
-
-              <!-- Row Items -->
-              <td>{{ wk.workout_type }}</td>
-              <td>{{ wk.weights }}</td>
-              <td>{{ wk.reps }}</td>
-
-              <td class='UD'>
-                
-              <!-- Delete a workout -->
-              <a
-              style="width: 20%"
-              class="btn btn-danger"
-              href="{% url 'main:delete-workout' wk.id%}"
-            />D<a>
-            
-            <!-- Update a workout -->
+          <h1 class='box'> Log your workouts below</h1>
+          
+          <div class="workout">
             <a
-                style="width: 20%"
-                class="btn btn-primary"
-                href="{% url 'main:update'  wk.id%}"
-              >U
-              </a>
+            class="btn btn-success"
+            href="{% url 'main:log' %}"
+            >+ Add
+            </a>
+            
+            <!-- Table of logged exercises -->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="heads" scope="col">Date<th>
+                  <th class="heads" scope="col">Workout</th>
+                  <th class="heads" scope="col">Weight</th>
+                  <th class="heads" scope="col">Reps</th>
+                </tr>
+              </thead>
+              <tbody>
 
-             </td>
-            </tr>
-            {% endfor %}
+                {% for wk in log %}
+                <tr>
 
-          </tbody>
-        </table>
-    </div>
-  </div>
+                  <!-- Current date view -->
+                  <td>{{ wk.current_date }}</td>
+                
+                  <!-- Row Items -->
+                  <th><td class="grow">{{ wk.workout_type }}</td></th>
+                  <td class="grow">{{ wk.weights }}</td>
+                  <td class="grow">{{ wk.reps }}</td>
 
-    
+                  <td class='UD'>
+                  
+                    
+                  <!-- Delete a workout -->
+                  <a
+                  style="width: 20%"
+                  class="btn btn-danger"
+                  href="{% url 'main:delete-workout' wk.id%}"
+                />D<a>
+                
+                <!-- Update a workout -->
+                <a
+                    style="width: 20%"
+                    class="btn btn-primary"
+                    href="{% url 'main:update'  wk.id%}"
+                  >U
+                  </a>
+
+                </td>
+                
+                </tr>
+                {% endfor %}
+
+              </tbody>
+            </table>
+        </div>
+      </div>
   </body>
 </html>
