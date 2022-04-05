@@ -1,0 +1,77 @@
+* {
+  font-family: "Varela Round";
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 2px;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 6px 3px rgb(31, 184, 255);
+  border-radius: 5px;
+}
+
+.btn-toggle {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.btn-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+}
+
+li {
+  padding: 0em 2em 0em 2em;
+}
+
+nav {
+  margin: 2em;
+}
+
+footer{
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+  nav {
+    margin: 0;
+  }
+  ul {
+    box-shadow: none;
+    box-sizing: unset;
+  }
+  .btn-toggle {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+  .nav-links ul {
+    flex-direction: column;
+  }
+  .nav-links li a {
+    padding: 0.2rem 0.2rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .container > iframe{
+     margin: 1em;
+     width: 24em;
+     height: 15em;
+  }
+}

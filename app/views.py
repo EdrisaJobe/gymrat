@@ -65,6 +65,11 @@ def facts(request):
     
     return render(request, 'facts.html')
 
+### Motivation Page ###
+def motivation(request):
+    
+    return render(request, 'motivation.html')
+
 ### Calories ###
 def calories(request):
     
