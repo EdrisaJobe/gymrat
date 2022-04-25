@@ -4,7 +4,7 @@ from .views import Workout, AddWorkout, UpdateWorkout, DeleteWorkout
 
 # setting name of app
 app_name = 'main'
-
+        
 urlpatterns = [
     
     # login
@@ -14,6 +14,7 @@ urlpatterns = [
     path('calories',views.calories,name='calories'),
     path('facts', views.facts,name='facts'),
     path('motivation', views.motivation, name='motivation'),
+    path('recipes', views.recipes, name='recipes'),
     
     # dashboard <add,update,delete>
     path('log-workout', AddWorkout.as_view(), name='log'),

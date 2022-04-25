@@ -112,6 +112,11 @@ def calories(request):
     else:
         return render(request, "calories.html")
 
+### RECIPES PAGE ###
+def recipes(request):
+    
+    return render(request, 'recipes.html')
+
 ### LOGIN FORM ###
 def login_form(request):
 

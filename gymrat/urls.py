@@ -26,6 +26,7 @@ urlpatterns = [
     # nav tab views
     path('calories', include('app.urls')),
     path('facts', include('app.urls')),
+    path('recipes', include('app.urls')),
     
     # paths for dashboard buttons
     path('log-workout', include('app.urls')),
