@@ -44,6 +44,9 @@ nav {
 footer{
     text-align: center;
 }
+.container{
+  padding-top: 1em;
+}
 
 @media (max-width: 800px) {
   nav {

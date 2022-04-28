@@ -65,6 +65,11 @@ em{
   margin: 10px 0px 5px 0px;
 }
 
+h1{
+  text-align: center;
+  padding-top: 1em;
+}
+
 @media (max-width: 800px) {
   nav {
     margin: 0;
