@@ -31,4 +31,3 @@ Web-services :spider_web:| Description|
 -------|------------|
 Heroku | Heroku is a cloud platform for hosting and maintaining website information which I used to later connect the platform with GoDaddy. 
 GoDaddy| Domain was registered from GoDaddy alongside all DNS setup.
-](https://gymrat-app.herokuapp.com/)
