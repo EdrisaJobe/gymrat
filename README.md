@@ -1,4 +1,4 @@
-[# About GymRat
+# About GymRat
 I've always wanted to track my gym sessions with ease but found every application too feature rich or just outright not working as intended. I wanted something ismple
 to fallback to so that I can track my progress and be able to quickly log in and out without the hassle of advertisements and outdated features. This app is perfect for 
 someone who's as simplistic as me, you can track your session get some motivation as well as find some helpful facts about going to the gym.
