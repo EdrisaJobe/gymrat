@@ -1,4 +1,4 @@
-# About GymRat
+[# About GymRat
 I've always wanted to track my gym sessions with ease but found every application too feature rich or just outright not working as intended. I wanted something ismple
 to fallback to so that I can track my progress and be able to quickly log in and out without the hassle of advertisements and outdated features. This app is perfect for 
 someone who's as simplistic as me, you can track your session get some motivation as well as find some helpful facts about going to the gym.
@@ -17,8 +17,7 @@ JavaScript | Used to implement the basic functionality of the graph when the use
 Backend :toolbox:| Description|
 -------|------------|
 Django | Django is a well known Python backend web framework which I used to gather all the necessary information. Mainly used for template tagging and connecting all the HTML pages as well as migrating my project to a database. Also used as a form of site/token protection from malicious intruders.
-Python | All the script was written in Python alongside Django for backend implementation primarily functions regarding the logic for how the red dots are placed onto the Leaflet map while at the same time using Python to grab an API to display up to date numbers ([https://covidtracking.com/data/api](https://covid19api.com/)).
-[ChartJS](https://www.chartjs.org/) | Used to display the accurate dynamic updates of different charts within its' database. I then used the provided data to take in custom values from user input.
+Python | All the script was written in Python alongside Django for backend implementation primarily functions regarding the logic for how the user logs into the website and logouts.
 SQLLite | Used SQL to save save user input within the database which can then be retrieved thus being able to see the dynamic graph changes in real time. The database can also be resetted using the "Reset" button within the input area.
 urllib3 + requests | Both allow grabbing of the pai which we can then display the information to the user with ease. When implementing this we grab the submitted data which can then later be maipulated for ease of access via the database.
 
@@ -32,3 +31,4 @@ Web-services :spider_web:| Description|
 -------|------------|
 Heroku | Heroku is a cloud platform for hosting and maintaining website information which I used to later connect the platform with GoDaddy. 
 GoDaddy| Domain was registered from GoDaddy alongside all DNS setup.
+](https://gymrat-app.herokuapp.com/)
