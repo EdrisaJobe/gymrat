@@ -1,0 +1,40 @@
+* {
+  font-family: "Varela Round";
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 2px;
+  
+}
+
+.box{
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px 5px rgb(108, 213, 255);
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    width: 50%;
+}
+
+p {
+  font-family: "Varela Round";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.alert{
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (max-width: 800px){
+
+    .box{
+        width: 90%;
+    }
+}
+

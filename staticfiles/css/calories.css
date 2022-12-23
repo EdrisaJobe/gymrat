@@ -1,0 +1,104 @@
+* {
+  font-family: "Varela Round";
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 2px;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 6px 3px rgb(31, 184, 255);
+  border-radius: 5px;
+}
+
+li {
+  padding: 0em 2em 0em 2em;
+}
+
+div {
+  margin: 2em;
+}
+
+.btn-toggle {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.btn-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+}
+
+select {
+  border-radius: 5px;
+  width: 30%;
+  height: 2em;
+}
+
+.input-button {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 2em;
+}
+
+.result {
+  float: right !important;
+}
+
+span{
+  font-size: 50px;
+}
+
+@media (max-width: 800px) {
+  ul {
+      box-shadow: none;
+      box-sizing: unset;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .bmr {
+    width: 200%;
+  }
+  .result {
+    float: none !important;
+  }
+  .btn-toggle {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+  .nav-links ul {
+    flex-direction: column;
+  }
+  .nav-links li a {
+    padding: 0.2rem 0.2rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .arrow{
+    display:none;
+  }
+  .bmr{
+    position: relative;
+    width: 220%;
+  }
+  .bmr, .result{
+    margin-left: 3em;
+  } 
+}

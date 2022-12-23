@@ -1,0 +1,14 @@
+* {
+  font-family: "Varela Round";
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding-top: 2px;
+}
+
+.container {
+
+    margin-top: 10em;
+}
