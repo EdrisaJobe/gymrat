@@ -19,7 +19,7 @@ Backend :toolbox:| Description|
 Django | Django is a well known Python backend web framework which I used to gather all the necessary information. Mainly used for template tagging and connecting all the HTML pages as well as migrating my project to a database. Also used as a form of site/token protection from malicious intruders.
 Python | All the script was written in Python alongside Django for backend implementation primarily functions regarding the logic for how the user logs into the website and logouts.
 SQLLite | Used SQL to save save user input within the database which can then be retrieved thus being able to see the dynamic graph changes in real time. The database can also be resetted using the "Reset" button within the input area.
-urllib3 + requests | Both allow grabbing of the pai which we can then display the information to the user with ease. When implementing this we grab the submitted data which can then later be maipulated for ease of access via the database.
+urllib3 + requests | Both allow grabbing of the api which we can then display the information to the user with ease. When implementing this we grab the submitted data which can then later be maipulated for ease of access via the database.
 
 Libraries :books:| Description|
 -------|------------|
