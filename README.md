@@ -33,6 +33,8 @@ Heroku | Heroku is a cloud platform for hosting and maintaining website informat
 GoDaddy| Domain was registered from GoDaddy alongside all DNS setup.
 
 # Visual Example
+<img width="1674" alt="Screen Shot 2023-01-11 at 2 58 04 PM" src="https://user-images.githubusercontent.com/48189579/211905447-648a85df-c04f-4503-b78c-bbec98f47f36.png">
+
 <img width="1674" alt="Screen Shot 2023-01-11 at 2 55 36 PM" src="https://user-images.githubusercontent.com/48189579/211905179-9047f6e3-0b72-47d9-81ce-7ba1ad3ee9aa.png">
 
 <img width="1674" alt="Screen Shot 2023-01-11 at 2 55 45 PM" src="https://user-images.githubusercontent.com/48189579/211905194-44e213b0-57f7-4216-8d6b-6663d9e78406.png">
