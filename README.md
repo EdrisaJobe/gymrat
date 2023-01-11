@@ -4,7 +4,7 @@ to fallback to so that I can track my progress and be able to quickly log in and
 someone who's as simplistic as me, you can track your session get some motivation as well as find some helpful facts about going to the gym.
 
 <a href="https://gymrat-app.herokuapp.com/"><img src="https://img.shields.io/badge/Link-Gym_Rat_App-2ea44f?style=for-the-badge" alt="Link - Gym Rat App"></a>
-# Technology Used :hammer_and_wrench:
+## Technology Used :hammer_and_wrench:
 
 Frontend :gear:| Description|
 -------|------------|
@@ -31,3 +31,14 @@ Web-services :spider_web:| Description|
 -------|------------|
 Heroku | Heroku is a cloud platform for hosting and maintaining website information which I used to later connect the platform with GoDaddy. 
 GoDaddy| Domain was registered from GoDaddy alongside all DNS setup.
+
+# Visual Example
+<img width="1674" alt="Screen Shot 2023-01-11 at 2 55 36 PM" src="https://user-images.githubusercontent.com/48189579/211905179-9047f6e3-0b72-47d9-81ce-7ba1ad3ee9aa.png">
+
+<img width="1674" alt="Screen Shot 2023-01-11 at 2 55 45 PM" src="https://user-images.githubusercontent.com/48189579/211905194-44e213b0-57f7-4216-8d6b-6663d9e78406.png">
+
+<img width="1674" alt="Screen Shot 2023-01-11 at 2 55 54 PM" src="https://user-images.githubusercontent.com/48189579/211905220-14d27919-f6bf-4b4c-9dce-198b7aeffb3e.png">
+
+<img width="1674" alt="Screen Shot 2023-01-11 at 2 56 25 PM" src="https://user-images.githubusercontent.com/48189579/211905238-912a8afa-c9c0-4e3d-86b4-4d23cfcfa731.png">
+
+
